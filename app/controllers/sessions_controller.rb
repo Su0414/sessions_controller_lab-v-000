@@ -8,10 +8,10 @@ class SessionsController < ApplicationController
     if params[:name]
       session[:name] = params[:name]
       redirect_to '/login'
-    else 
+    else
       redirect_to '/'
     end
-        
+
   end
 
   def destroy
